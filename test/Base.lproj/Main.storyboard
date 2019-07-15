@@ -88,6 +88,42 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="click_to_enable_adobe_flash" translatesAutoresizingMaskIntoConstraints="NO" id="YxU-TI-DU7">
+                                <rect key="frame" x="133" y="81" width="149" height="225"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="Qog-kf-sX9">
+                                <rect key="frame" x="133" y="644" width="149" height="225"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gu-Tn-dui">
+                                <rect key="frame" x="133" y="81" width="149" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <segue destination="Z23-tI-BML" kind="show" id="VcP-tI-Xcu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xn1-JZ-aBw">
+                                <rect key="frame" x="133" y="361" width="149" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <segue destination="Z23-tI-BML" kind="show" id="zIZ-sB-Ay9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdj-A3-wNA">
+                                <rect key="frame" x="133" y="644" width="149" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <segue destination="Z23-tI-BML" kind="show" id="ssQ-tQ-0MN"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="horrible_substitute_for_cereal" translatesAutoresizingMaskIntoConstraints="NO" id="Tmg-Le-DXO">
+                                <rect key="frame" x="133" y="361" width="149" height="225"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="U1Q-EU-3Yh"/>
@@ -95,7 +131,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHD-Pe-NDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605.60000000000002" y="133.5832083958021"/>
+            <point key="canvasLocation" x="604.34782608695662" y="133.25892857142856"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="oxY-PG-Ez8">
+            <objects>
+                <viewController id="Z23-tI-BML" customClass="thirdViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CE5-zr-alK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="S0F-QU-dmd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p75-ed-WLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1536" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="click_to_enable_adobe_flash" width="183" height="275"/>
+        <image name="horrible_substitute_for_cereal" width="1200" height="1800"/>
+        <image name="launch" width="225" height="225"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VcP-tI-Xcu"/>
+    </inferredMetricsTieBreakers>
 </document>
