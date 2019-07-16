@@ -8,14 +8,27 @@
 
 import UIKit
 
-class thirdViewController: UIViewController {
+class thirdViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+        
+        return cell
+        
+    }
+    
+    
+    
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+
+        override func viewDidLoad() {
+            super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+}
 
     /*
     // MARK: - Navigation
@@ -27,4 +40,4 @@ class thirdViewController: UIViewController {
     }
     */
 
-}
+
