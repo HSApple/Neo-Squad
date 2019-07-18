@@ -8,16 +8,19 @@
 
 import UIKit
 
-class thirdViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
-    }
+class thirdViewController: UIViewController {
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
-        
-        return cell
-        
-    }
+    @IBOutlet weak var listView: UITableView!
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
