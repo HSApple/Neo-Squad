@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FC0A3AF22DCD729001BF021 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC0A3AE22DCD729001BF021 /* thirdViewController.swift */; };
+		3FC0A3AF22DCD729001BF021 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC0A3AE22DCD729001BF021 /* ThirdViewController.swift */; };
 		3FC71E4222E0CCE800B9AE01 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC71E4122E0CCE800B9AE01 /* HomeModel.swift */; };
 		3FC71E4422E0CCFC00B9AE01 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC71E4322E0CCFC00B9AE01 /* LocationModel.swift */; };
 		3FDBB90422D4DCD900598B5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBB90322D4DCD900598B5D /* AppDelegate.swift */; };
@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3FC0A3AE22DCD729001BF021 /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
+		3FC0A3AE22DCD729001BF021 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		3FC71E4122E0CCE800B9AE01 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		3FC71E4322E0CCFC00B9AE01 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		3FDBB90022D4DCD900598B5D /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +67,7 @@
 				3FDBB90322D4DCD900598B5D /* AppDelegate.swift */,
 				3FDBB90522D4DCD900598B5D /* ViewController.swift */,
 				3FDBB90722D4DCD900598B5D /* Main.storyboard */,
-				3FC0A3AE22DCD729001BF021 /* thirdViewController.swift */,
+				3FC0A3AE22DCD729001BF021 /* ThirdViewController.swift */,
 				3FE921FA22D637A7005BACAE /* PrimaryButton.swift */,
 				3FDBB90A22D4DCDA00598B5D /* Assets.xcassets */,
 				3FDBB90C22D4DCDA00598B5D /* LaunchScreen.storyboard */,
@@ -153,7 +153,7 @@
 				3FDBB91622D4DF2600598B5D /* SecondViewController.swift in Sources */,
 				3FDBB90622D4DCD900598B5D /* ViewController.swift in Sources */,
 				3FC71E4222E0CCE800B9AE01 /* HomeModel.swift in Sources */,
-				3FC0A3AF22DCD729001BF021 /* thirdViewController.swift in Sources */,
+				3FC0A3AF22DCD729001BF021 /* ThirdViewController.swift in Sources */,
 				3FE921FB22D637A7005BACAE /* PrimaryButton.swift in Sources */,
 				3FC71E4422E0CCFC00B9AE01 /* LocationModel.swift in Sources */,
 				3FDBB90422D4DCD900598B5D /* AppDelegate.swift in Sources */,
