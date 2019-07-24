@@ -17,7 +17,7 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell()
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "Cell")
         return cell
     }
     
@@ -36,8 +36,8 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
     //make one for each dinner breakfast and lunch
-    func make_query(db: OpaquePointer?) {
-        let queryString = "SELECT * FROM Recipe:"
+    func make_query(db: OpaquePointer?, meal_type: String) {
+        let queryString = "SELECT * FROM Recipe WHERE meal_type = \(meal_type):"
         var statement: OpaquePointer?
         if sqlite3_prepare_v2(db, queryString, -1, &statement, nil) != SQLITE_OK {
             let errmsg = String(cString: sqlite3_errmsg(db)!)
@@ -55,25 +55,25 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 }  else {
                     print("name not found")
                 }
-            let servings = sqlite3_column_int64(statement, 0)
+            let servings = sqlite3_column_int64(statement, 2)
             print ("servings = \(servings); ", terminator: "")
             
         }
-        if let cString = sqlite3_column_text(statement, 1) {
+        if let cString = sqlite3_column_text(statement, 3) {
             let serving_size = String(cString: cString)
             print("serving_size = \(serving_size)")
             
-            if let cString = sqlite3_column_text(statement, 1) {
+            if let cString = sqlite3_column_text(statement, 4) {
                 let src = String(cString: cString)
                 print("src = \(src)")
-                
-                let id = sqlite3_column_int64(statement, 0)
+//nice
+                let id = sqlite3_column_int64(statement, 5)
                 print ("id = \(id); ", terminator: "")
                 
-                let recipeID = sqlite3_column_int64(statement, 0)
+                let recipeID = sqlite3_column_int64(statement, 6)
                 print ("recipeID = \(recipeID); ", terminator: "")
     
-                let step_number = sqlite3_column_int64(statement, 0)
+                let step_number = sqlite3_column_int64(statement, 7 )
                 print ("step_number = \(step_number); ", terminator: "")
                 
                 let step = String(cString: cString)
@@ -97,12 +97,8 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 }
                 statement = nil
             }
-        let queryStatementString = "SELECT * FROM Contact;"
-        let insertStatementString = "INSERT INTO Contact (Id, Name) VALUES (?, ?);"
-        let queryStatementString2 = "SELECT * FROM (file name);"
+        let queryStatementString = "SELECT * FROM Recipe;"
     
-            func tableView( _ tableView: UITableView, numberOfRowsInSection section: Int)
-                -> Int 
         }
     }
 
@@ -111,4 +107,8 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         // Do any additional setup after loading the view.
     }
+    override func viewDidAppear(_ animated: Bool) {
+        listView2.reloadData()
+    }
+    
 }
