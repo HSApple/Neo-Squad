@@ -16,6 +16,24 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem()
+        backItem.title = "Back"
+        navigationItem.backBarButtonItem = backItem
+        
+        if (segue.identifier == "breakfastSegue") {
+            let vc : ThirdViewController = (segue.destination as! ThirdViewController)
+            vc.mealType = "BREAKFAST" 
+        }   else if (segue.identifier == "lunchSegue") {
+            let vc : ThirdViewController = (segue.destination as! ThirdViewController)
+            vc.mealType = "LUNCH"
+        } else {
+            let vc : ThirdViewController = (segue.destination as! ThirdViewController)
+            vc.mealType = "DINNER"
+        }
+    }
+    
+    
 
     /*
     // MARK: - Navigation

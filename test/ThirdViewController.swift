@@ -11,6 +11,7 @@ import SQLite3
 
 class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var listView2: UITableView!
+    var mealType:String=""
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
