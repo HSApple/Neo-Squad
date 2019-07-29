@@ -115,7 +115,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Z23-tI-BML" kind="show" id="G1d-IF-iA3"/>
+                                    <segue destination="Z23-tI-BML" kind="show" identifier="lunchSegue" id="G1d-IF-iA3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWs-tG-r1c">
@@ -126,7 +126,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Z23-tI-BML" kind="show" id="ran-Z1-TsF"/>
+                                    <segue destination="Z23-tI-BML" kind="show" identifier="breakfastSegue" id="ran-Z1-TsF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05Z-qj-84h">
@@ -137,7 +137,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Z23-tI-BML" kind="show" id="aQI-h6-haD"/>
+                                    <segue destination="Z23-tI-BML" kind="show" identifier="dinnerSegue" id="aQI-h6-haD"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCH-46-X5b">
@@ -301,7 +301,7 @@
         <image name="launch" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aQI-h6-haD"/>
-        <segue reference="VJy-MT-Hef"/>
+        <segue reference="ran-Z1-TsF"/>
+        <segue reference="cxN-nF-3gA"/>
     </inferredMetricsTieBreakers>
 </document>
